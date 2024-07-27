@@ -16,11 +16,11 @@ import {
   CardContent,
 } from "@/components/ui/card";
 
-function Projects() {
+function DevProjects() {
   return (
     <div>
       <section id="projects" className="py-12">
-        <h2 className="text-3xl font-bold mb-8">My Projects</h2>
+        <h2 className="text-3xl font-bold mb-8">My Development Projects</h2>
         <Carousel className="w-full max-w-4xl mx-auto">
           <CarouselContent>
             {/* PROJECT1 */}
@@ -115,4 +115,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default DevProjects;

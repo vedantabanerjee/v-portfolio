@@ -1,14 +1,41 @@
 import React from "react";
 import Link from "next/link";
-import Projects from "./Projects";
-import ContactMe from "./ContactMe";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "@/components/ui/card";
+import DevProjects from "@/components/DevProjects"; // Ensure the paths are correct
+import AimlProjects from "@/components/AimlProjects"; // Ensure the paths are correct
+import ContactMe from "@/components/ContactMe"; // Ensure the paths are correct
+
+const fadeInVariants = {
+  hidden: { opacity: 0, y: 100 },
+  visible: { opacity: 1, y: 0 },
+};
 
 function Hero() {
   return (
     <div className="flex-1 px-6 py-12 md:px-10 lg:px-16 ">
-      <section
+      <motion.section
         id="hero"
         className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={fadeInVariants}
       >
         <div className="space-y-4">
           <h1 className="text-5xl font-bold">Vedanta Banerjee.</h1>
@@ -41,13 +68,18 @@ function Hero() {
           <img
             src="/hero_gif_2.webp"
             alt="GIF"
-            className="rounded-full w-full max-w-[400px] mx-auto"
+            className="rounded-full w-full max-w-[450px] mx-auto border-4 border-gray-200"
           />
         </div>
-      </section>
-      <section
+      </motion.section>
+      <motion.section
         id="about"
         className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={fadeInVariants}
       >
         <div>
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
@@ -95,8 +127,6 @@ function Hero() {
                 {" "}
                 [Udemy Certificate]
               </a>
-              {/* <br />
-                Google Cloud Certified Professional */}
             </p>
           </div>
           <div className="bg-muted rounded-lg p-4">
@@ -107,8 +137,16 @@ function Hero() {
             </p>
           </div>
         </div>
-      </section>
-      <section id="skills" className="py-12">
+      </motion.section>
+      <motion.section
+        id="skills"
+        className="py-12"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={fadeInVariants}
+      >
         <h2 className="text-3xl font-bold mb-8">My Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="bg-muted rounded-lg p-4 flex flex-col items-center">
@@ -136,9 +174,36 @@ function Hero() {
             <p className="text-muted-foreground text-sm">AWS,Vercel</p>
           </div>
         </div>
-      </section>
-      <Projects />
-      <ContactMe />
+      </motion.section>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={fadeInVariants}
+      >
+        <DevProjects />
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={fadeInVariants}
+      >
+        <AimlProjects />
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={fadeInVariants}
+      >
+        <ContactMe />
+      </motion.div>
     </div>
   );
 }

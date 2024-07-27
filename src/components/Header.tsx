@@ -51,7 +51,7 @@ const Header = () => {
           <FaTwitter className="inline-block mr-2" /> Twitter
         </Link>
         <Link
-          href="/music"
+          href='#'
           className="text-muted-foreground hover:text-foreground"
           prefetch={false}
         >
