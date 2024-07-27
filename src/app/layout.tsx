@@ -6,7 +6,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "vedantabanerjee",
-  description: "Portfolio of Vedanta Banerjee",
 };
 
 import { Tenor_Sans } from 'next/font/google'
