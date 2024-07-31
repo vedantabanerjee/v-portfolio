@@ -51,7 +51,7 @@ const Header = () => {
           <FaTwitter className="inline-block mr-2" /> Twitter
         </Link>
         <Link
-          href='#'
+          href="#"
           className="text-muted-foreground hover:text-foreground"
           prefetch={false}
         >
@@ -69,39 +69,39 @@ const Header = () => {
       {isOpen && (
         <div className="absolute top-16 right-0 bg-white shadow-lg rounded-lg py-2 w-48 z-50 md:hidden">
           <Link
-            href="https://github.com/yourusername"
-            className="block px-4 py-2 text-muted-foreground hover:text-foreground bg-white"
+            href="https://github.com/vedantabanerjee"
+            className="text-muted-foreground hover:text-foreground"
             prefetch={false}
           >
             <FaGithub className="inline-block mr-2" /> Github
           </Link>
           <Link
-            href="https://linkedin.com/in/yourusername"
-            className="block px-4 py-2 text-muted-foreground hover:text-foreground bg-white"
+            href="https://www.linkedin.com/in/vedanta-banerjee"
+            className="text-muted-foreground hover:text-foreground"
             prefetch={false}
           >
             <FaLinkedin className="inline-block mr-2" /> LinkedIn
           </Link>
           <Link
-            href="/music"
-            className="block px-4 py-2 text-muted-foreground hover:text-foreground bg-white"
-            prefetch={false}
-          >
-            <FaMusic className="inline-block mr-2" /> Music
-          </Link>
-          <Link
-            href="https://medium.com/@yourusername"
-            className="block px-4 py-2 text-muted-foreground hover:text-foreground bg-white"
+            href="https://medium.com/@vedantabanerjee"
+            className="text-muted-foreground hover:text-foreground"
             prefetch={false}
           >
             <FaMedium className="inline-block mr-2" /> Medium
           </Link>
           <Link
-            href="https://twitter.com/yourusername"
-            className="block px-4 py-2 text-muted-foreground hover:text-foreground bg-white"
+            href="https://x.com/0xr1sh1"
+            className="text-muted-foreground hover:text-foreground"
             prefetch={false}
           >
             <FaTwitter className="inline-block mr-2" /> Twitter
+          </Link>
+          <Link
+            href="#"
+            className="text-muted-foreground hover:text-foreground"
+            prefetch={false}
+          >
+            <FaMusic className="inline-block mr-2" /> Music
           </Link>
         </div>
       )}
