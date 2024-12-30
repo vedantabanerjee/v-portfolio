@@ -49,7 +49,7 @@ function Hero() {
           </p>
           <div className="flex gap-5">
             <Link
-              href="https://drive.google.com/file/d/13jMiwyt3__RjMLTP05aJnQT406_Hy3pw/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-COUaftHbFFom-8VHsXXl5gCow0Q4hIX/view?usp=sharing"
               className="inline-flex items-center justify-center rounded-md bg-[#4285F4] px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-[#4285F4]/90 focus:outline-none focus:ring-2 focus:ring-[#4285F4] focus:ring-offset-2"
               prefetch={false}
             >
@@ -84,12 +84,12 @@ function Hero() {
         <div>
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-muted-foreground">
-            Thanks for stopping by! I am a indie software developer and a
-            philomath from India. Academically, currently pursuing undergraduate
-            degree in electronics and instrumentation engineering. I am deeply
-            passionate about computers (both hardware and software), space
-            (cosmology), books and music! I like creating digital solutions that
-            make a real impact - brings me joy!
+            Thanks for stopping by! I am an electronics engineer, software
+            developer and a philomath from India. Academically, currently
+            pursuing undergraduate degree in electronics and instrumentation
+            engineering. I am deeply passionate about computers (both hardware
+            and software), space (cosmology), books and music! I like creating
+            digital solutions that make a real impact - brings me joy!
           </p>
           <p className="text-muted-foreground mt-4 pb-3">
             When I am not fixing bugs or tinkering with electronics, you might
@@ -111,20 +111,19 @@ function Hero() {
             <h3 className="text-lg font-bold mb-2">Latest Experience</h3>
             <p className="text-muted-foreground">
               Full-Stack Software Engineering Intern at
-              <b> Advent EduTech</b>
+              <b> Alchemyst AI </b>
             </p>
           </div>
           <div className="bg-muted rounded-lg p-4">
-            <h3 className="text-lg font-bold mb-2">Certifications</h3>
+            <h3 className="text-lg font-bold mb-2">Latest Certifications</h3>
             <p className="text-muted-foreground">
-              Python for Data Science and Machine Learning Bootcamp
+              • Python for Data Science and Machine Learning Bootcamp{" "}
               <a
                 href="https://www.udemy.com/certificate/UC-7762da0b-11d5-4dc8-9fe6-22ed716cb9f2"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500"
+                className="underline"
               >
-                {" "}
                 [Udemy Certificate]
               </a>
             </p>
@@ -132,7 +131,7 @@ function Hero() {
           <div className="bg-muted rounded-lg p-4">
             <h3 className="text-lg font-bold mb-2">Latest Achievements</h3>
             <p className="text-muted-foreground">
-              Won $1000 as 1st runner up in the Web3 & AI Hachathon by Encode
+              Won $1000 as 1st runner up in the Web3 & AI Hackathon by Encode
               Club.
             </p>
           </div>
